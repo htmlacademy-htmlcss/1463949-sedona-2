@@ -2,7 +2,7 @@
 
 * Студент: [Дмитрий Феофанов](https://up.htmlacademy.ru/htmlcss-individual/2/user/1463949).
 * Наставник: `Неизвестно`.
-
+* Мой проект Седона (https://feofanovdmitriy.github.io/1463949-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
