@@ -9,23 +9,25 @@
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html" aria-current="page">
-            <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70"  alt="Логотип сайта, который подберет вам гостиницы в городе Седона">
-          </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-current">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
+          <div class="navigation-container">
+            <a class="navigation-logo" href="index.html" aria-current="page">
+              <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70"  alt="Логотип сайта, который подберет вам гостиницы в городе Седона">
+            </a>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О Седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+          </div>
 
           <div class="navigation-user-container">
-            <ul class="navigation-user">
+            <ul class="navigation-user-list">
               <li class="navigation-user-item">
                 <a class="navigation-user-link navigation-user-link-search" href="#">
                   <span class="visually-hidden">Поиск.</span>
@@ -118,7 +120,7 @@
         <section class="search" data-test="search">
           <div class="search-content">
             <h2 class="search-title">Заинтересовались?</h2>
-            <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
           </div>
         </section>
@@ -128,11 +130,11 @@
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="subscription-form-wrapper">
-                <label class="visually-hidden" for="subscription-email">Укажите Ваш e-mail.</label>
-                <input class="subscription-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
-              </p>
-              <button class="button subscription-buttom" type="submit">Подписаться</button>
+              <div class="subscription-form-wrapper">
+                  <label class="visually-hidden" for="subscription-email">Укажите Ваш e-mail.</label>
+                  <input class="subscription-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
+                <button class="button subscription-buttom" type="submit">Подписаться</button>
+              </div>
             </form>
           </div>
         </section>
@@ -163,6 +165,6 @@
         </a>
 
       </footer>
-  </div>
+    </div>
   </body>
 </html>
