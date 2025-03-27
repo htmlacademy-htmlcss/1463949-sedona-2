@@ -9,25 +9,23 @@
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <div class="navigation-container">
-            <a class="navigation-logo" href="index.html">
-              <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип сайта, который подберет вам гостиницы в городе Седона">
-            </a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">О Седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
+          <a class="navigation-logo" href="index.html">
+            <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип сайта, который подберет вам гостиницы в городе Седона">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
+            </li>
+          </ul>
 
           <div class="navigation-user-container">
-            <ul class="navigation-user-list">
+            <ul class="navigation-user">
               <li class="navigation-user-item">
                 <a class="navigation-user-link navigation-user-link-search" href="#">
                   <span class="visually-hidden">Поиск.</span>
@@ -127,10 +125,8 @@
                     <span class="visually-hidden">Управление максимальным диапозоном цен.</span>
                   </button>
             </fieldset>
-            <div class="filter-button-wrapper">
-            <button class="button catalog-form-button" type="submit">Применить</button>
+            <button class="button catalog-form-button" type="submit">Показать</button>
             <button class="button button-reset" type="reset">Сбросить</button>
-            </div>
           </form>
         </section>
         </div>
@@ -140,13 +136,11 @@
             <h2 class="catalog-hotels-title">Найдено гостиниц:
               <span>38</span>
             </h2>
-            <div class="select-content">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Сначала популярные</option>
-                <option value="cheap" selected>Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
-              </select>
-            </div>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected>Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
             <ul class="view-buttons-list">
               <li class="view-buttons-item">
                 <a class="view-buttons-link view-buttons-link-selected" href="catalog.html?view=tile">
@@ -178,7 +172,7 @@
               <a class="button button-details" href="#">подробнее</a>
               <a class="button add-favorite-button" href="#">в избранное</a>
               <p class="stars four-stars">
-                <span class="visually-hidden">4 звезды</span>
+                <span class="visually-hidden">4 звезды. </span>
               </p>
               <p class="hotels-item-rating">Рейтинг: 8,5</p>
             </li>
@@ -194,7 +188,7 @@
               <a class="button button-details" href="#">подробнее</a>
               <a class="button del-favorite-button" href="#">в избранном</a>
               <p class="stars four-stars">
-                <span class="visually-hidden">4 звезды</span>
+                <span class="visually-hidden">4 звезды. </span>
               </p>
               <p class="hotels-item-rating">Рейтинг: 9,2</p>
             </li>
@@ -210,7 +204,7 @@
               <a class="button button-details" href="#">подробнее</a>
               <a class="button add-favorite-button" href="#">в избранное</a>
               <p class="stars three-stars">
-                <span class="visually-hidden">3 звезды</span>
+                <span class="visually-hidden">3 звезды. </span>
               </p>
               <p class="hotels-item-rating">Рейтинг: 6,9</p>
             </li>
@@ -226,7 +220,7 @@
               <a class="button button-details" href="#">подробнее</a>
               <a class="button add-favorite-button" href="#">в избранное</a>
               <p class="stars two-stars">
-                <span class="visually-hidden">2 звезды</span>
+                <span class="visually-hidden">2 звезды. </span>
               </p>
               <p class="hotels-item-rating">Рейтинг: 5,0</p>
             </li>
@@ -258,11 +252,11 @@
             <h2 class="subscription-title subscription-title-catalog">Подпишитесь на рассылку</h2>
             <p class="subscription-description subscription-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="subscription-form-wrapper">
-                  <label class="visually-hidden" for="subscription-email">Укажите Ваш e-mail.</label>
-                  <input class="subscription-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
-                <button class="button subscription-buttom" type="submit">Подписаться</button>
-              </div>
+              <p class="subscription-form-wrapper">
+                <label class="visually-hidden" for="subscription-email">Укажите Ваш e-mail.</label>
+                <input class="subscription-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
+              </p>
+              <button class="button subscription-buttom" type="submit">Подписаться</button>
             </form>
           </div>
         </section>
@@ -288,7 +282,7 @@
         </ul>
         <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
         <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-          <span class="visually-hidden">HTML Academy. Перейти на сайт</span>
+          <img src="images/html-academy.svg" width="115" height="33"  alt="HTML Academy. Перейти на сайт">
         </a>
       </footer>
     </div>
