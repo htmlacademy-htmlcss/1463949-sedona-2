@@ -9,39 +9,35 @@
     <div class="page-container">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <div class="navigation-container">
-            <a class="navigation-logo" href="index.html" aria-current="page">
-              <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70"  alt="Логотип сайта, который подберет вам гостиницы в городе Седона">
-            </a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">О Седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
+          <a class="navigation-logo" href="index.html" aria-current="page">
+            <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70"  alt="Логотип сайта, который подберет вам гостиницы в городе Седона">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
 
-          <div class="navigation-user-container">
-            <ul class="navigation-user-list">
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-link-search" href="#">
-                  <span class="visually-hidden">Поиск.</span>
-                </a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-link-favorite" href="#">
-                  <span class="visually-hidden">Избранное.</span>
-                  <span class="notification-badge">12</span>
-                </a>
-              </li>
-            </ul>
-            <a class="button navigation-button" href="#">Хочу сюда!</a>
-          </div>
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-link-search" href="#">
+                <span class="visually-hidden">Поиск.</span>
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-link-favorite" href="#">
+                <span class="visually-hidden">Избранное.</span>
+                <span class="notification-badge">12</span>
+              </a>
+            </li>
+          </ul>
+          <a class="button navigation-button" href="#">Хочу сюда!</a>
         </nav>
       </header>
 
@@ -60,7 +56,7 @@
           </div>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-big-dark">
-              <div class="advantages-wrap">
+              <div class="advantages-wrap-small">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
@@ -85,7 +81,7 @@
               </div>
             </li>
             <li class="advantages-item advantages-item-big-dark advantages-item-reverse">
-              <div class="advantages-wrap">
+              <div class="advantages-wrap-small">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
@@ -118,25 +114,19 @@
         </section>
 
         <section class="search" data-test="search">
-          <div class="search-content">
-            <h2 class="search-title">Заинтересовались?</h2>
-            <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
-          </div>
+          <h2 class="search-title">Заинтересовались?</h2>
+          <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
-        <section class="subscription subscription-background " data-test="subscribe">
-          <div class="subscription-content">
-            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-            <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="subscription-form-wrapper">
-                  <label class="visually-hidden" for="subscription-email">Укажите Ваш e-mail.</label>
-                  <input class="subscription-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
-                <button class="button subscription-buttom" type="submit">Подписаться</button>
-              </div>
-            </form>
-          </div>
+        <section class="subscription subscription-background" data-test="subscribe">
+          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscription-email">Укажите Ваш e-mail.</label>
+            <input class="subscription-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
+            <button class="button subscription-buttom" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
 
