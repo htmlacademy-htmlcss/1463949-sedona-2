@@ -2,7 +2,7 @@
 
 * Студент: [Дмитрий Феофанов](https://up.htmlacademy.ru/htmlcss-individual/2/user/1463949)
 * Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957)
-* Мой проект [Седона](https://feofanovdmitriy.github.io/1463949-sedona-2/)
+* Мой проект: [Седона](https://feofanovdmitriy.github.io/1463949-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
