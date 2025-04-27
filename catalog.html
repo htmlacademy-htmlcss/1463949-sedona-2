@@ -38,7 +38,7 @@
               </a>
             </li>
           </ul>
-          <a class="button navigation-button" href="#">Хочу сюда!</a>
+          <a class="button navigation-button button-brown" href="#">Хочу сюда!</a>
         </nav>
       </header>
 
@@ -57,88 +57,97 @@
               </li>
             </ul>
           </header>
-          <section class="filter-catalog" data-test="filter">
-            <h2 class="visually-hidden"> Фильтры поиска гостиниц.</h2>
-            <form class="filter-catalog-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filter-catalog-checkbox">
-                <legend class="filter-catalog-title">Инфраструктура:</legend>
-                <ul class="filter-catalog-list">
-                  <li class="filter-catalog-item">
-                    <label class="filter-label" for="pool">
-                      <input class="filter-input-checkbox visually-hidden" type="checkbox" id="pool" name="pool" value="yes" checked>
+          <section data-test="filter" class="catalog-filter">
+            <h2 class="visually-hidden">Фильтр гостиниц</h2>
+            <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="checkbox-filter-field">
+                <legend class="fieldset-legend">Инфраструктура:</legend>
+                <ul class="filter-list checkbox-filter-list">
+                  <li class="filter-input checkbox-filter-input">
+                    <label class="filter-label" for="swimming-pool">
+                      <input class="checkbox-input visually-hidden" type="checkbox" id="swimming-pool" name="Бассейн"
+                        value="Да" checked>
+                      <span class="checkbox-mark"></span>
                       Бассейн
-                      <span class="checkbox-mark"></span>
                     </label>
                   </li>
-                  <li class="filter-catalog-item">
+                  <li class="filter-input checkbox-filter-input">
                     <label class="filter-label" for="parking">
-                      <input class="filter-input-checkbox visually-hidden" type="checkbox" id="parking" name="parking" value="yes" checked>
+                      <input class="checkbox-input visually-hidden" type="checkbox" id="parking" name="Парковка"
+                        value="Да" checked>
+                      <span class="checkbox-mark"></span>
                       Парковка
-                      <span class="checkbox-mark"></span>
                     </label>
                   </li>
-                  <li class="filter-catalog-item">
+                  <li class="filter-input checkbox-filter-input">
                     <label class="filter-label" for="wi-fi">
-                      <input class="filter-input-checkbox visually-hidden" type="checkbox" id="wi-fi" name="wi-fi" value="yes">
-                      Wi-Fi
+                      <input class="checkbox-input visually-hidden" type="checkbox" id="wi-fi" name="Wi-Fi" value="Да">
                       <span class="checkbox-mark"></span>
+                      Wi-Fi
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-catalog-radio">
-                <legend class="filter-catalog-title">Тип жилья:</legend>
-                <ul class="filter-catalog-list">
-                  <li class="filter-catalog-item">
+              <fieldset class="radio-filter-field">
+                <legend class="fieldset-legend">Тип жилья:</legend>
+                <ul class="filter-list radio-filter-list">
+                  <li class="filter-input radio-filter-input">
                     <label class="filter-label" for="hotel">
-                      <input class="filter-input-radio visually-hidden" type="radio" id="hotel" name="type-of-housing" value="Гостиница" tabindex="0" checked>
+                      <input class="radio-input visually-hidden" type="radio" id="hotel" name="Тип жилья:"
+                        value="Гостиница" tabindex="0" checked>
+                      <span class="radio-mark"></span>
                       Гостиница
-                      <span class="radio-mark"></span>
                     </label>
                   </li>
-                  <li class="filter-catalog-item">
+                  <li class="filter-input radio-filter-input">
                     <label class="filter-label" for="motel">
-                      <input class="filter-input-radio visually-hidden" type="radio" id="motel" name="type-of-housing" value="Мотель" tabindex="0">
-                      Мотель
+                      <input class="radio-input visually-hidden" type="radio" id="motel" name="Тип жилья:"
+                        value="Мотель" tabindex="0">
                       <span class="radio-mark"></span>
+                      Мотель
                     </label>
                   </li>
-                  <li class="filter-catalog-item">
+                  <li class="filter-input radio-filter-input">
                     <label class="filter-label" for="apartments">
-                      <input class="filter-input-radio visually-hidden" type="radio" id="apartments" name="type-of-housing" value="Апартаменты" tabindex="0">
-                      Апартаменты
+                      <input class="radio-input visually-hidden" type="radio" id="apartments" name="Тип жилья:"
+                        value="Апартаменты" tabindex="0">
                       <span class="radio-mark"></span>
+                      Апартаменты
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-catalog-price">
-                <legend class="filter-catalog-title fieldset-cost-legend">Стоимость, ₽:</legend>
-                <label class="filter-label-price" for="min-price">
-                  <span class="price-text">от</span>
-                  <input class="filter-input-price filter-input-price-min" type="number" id="min-price" name="Стоимость от:" min="0" value="0">
+              <fieldset class="cost-filter-field">
+                <legend class="fieldset-legend fieldset-cost-legend">Стоимость, ₽:</legend>
+                <label class="cost-filter-label" for="min-cost">
+                  <span class="cost-text">от</span>
+                  <input class="cost-filter-input min-cost-filter-input" type="number" id="min-cost"
+                    name="Стоимость от:" min="0" value="0">
                 </label>
-                <label class="filter-label-price" for="max-price">
-                  <span class="price-text">до</span>
-                  <input class="filter-input-price filter-input-price-max" type="number" id="max-price" name="Стоимость до:" min="0" value="9000">
+                <label class="cost-filter-label" for="max-cost">
+                  <span class="cost-text">до</span>
+                  <input class="cost-filter-input max-cost-filter-input" type="number" id="max-cost"
+                    name="Стоимость до:" min="0" value="9000">
                 </label>
                 <div class="range-slider">
                   <div class="range-bar" style="left: 0; width: 227px">
-                    <button class="range-slider-handler range-slider-handler-min" type="button"></button>
-                    <button class="range-slider-handler range-slider-handler-max" type="button"></button>
+                    <button class="range-slider-handler range-slider-handler-min" type="button"
+                      aria-label="Слайдер минимального значения цены"></button>
+                    <button class="range-slider-handler range-slider-handler-max" type="button"
+                      aria-label="Слайдер максимального значения цены"></button>
                   </div>
                 </div>
               </fieldset>
-              <div class="filter-button-wrapper">
-                <button class="button catalog-form-button" type="submit">Применить</button>
-                <button class="button button-reset" type="reset">Сбросить</button>
-                </div>
+              <div class="filter-button-container">
+                <button class="button filter-submit-button button-blue" type="submit">Применить</button>
+                <button class="button filter-reset-button button-transparent" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
 
         <div class="catalog-container">
-          <section data-test="catalog" class="catalog">
+          <section class="catalog" data-test="catalog">
             <h2 class="sorting-title">Найдено гостиниц:
               <span>38</span>
             </h2>
@@ -167,16 +176,15 @@
             <ul class="catalog-hotels-list">
               <li class="catalog-hotel-card">
                 <a class="hotels-item-img-link" href="#" tabindex="-1">
-                  <img class="hotels-item-img" src="images/hotels/hotel-1.jpg" width="300" height="212"
-                    alt="Амара Резорт и Спа">
+                  <img class="hotels-item-img" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
                 </a>
                 <a class="hotels-item-link hotels-item-title-link" href="#" tabindex="-1">
                   <h3 class="catalog-hotel-title">Amara Resort & Spa</h3>
                 </a>
                 <p>Гостиница</p>
                 <p class="hotel-cost">От 4000 ₽</p>
-                <a class="more-details-btn btn-main" href="#">Подробнее</a>
-                <button class="add-to-favourite-btn btn-additional" type="button">В избранное</button>
+                <a class="button details-button button-brown" href="#">Подробнее</a>
+                <button class="button add-favourite-button button-blue" type="button">В избранное</button>
                 <p class="hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
                   <span class="hotel-single-star"></span>
@@ -196,8 +204,8 @@
                 </a>
                 <p>Гостиница</p>
                 <p class="hotel-cost">От 5000 ₽</p>
-                <a class="more-details-btn btn-main" href="#">Подробнее</a>
-                <button class="add-to-favourite-btn btn-additional active" type="button">В избранном</button>
+                <a class="button details-button button-brown" href="#">Подробнее</a>
+                <button class="button del-favourite-button button-green" type="button">В избранном</button>
                 <p class="hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
                   <span class="hotel-single-star"></span>
@@ -217,8 +225,8 @@
                 </a>
                 <p>Гостиница</p>
                 <p class="hotel-cost">От 2500 ₽</p>
-                <a class="more-details-btn btn-main" href="#">Подробнее</a>
-                <button class="add-to-favourite-btn btn-additional" type="button">В избранное</button>
+                <a class="button details-button button-brown" href="#">Подробнее</a>
+                <button class="button add-favourite-button button-blue" type="button">В избранное</button>
                 <p class="hotel-stars">
                   <span class="visually-hidden">3 звезды</span>
                   <span class="hotel-single-star"></span>
@@ -237,8 +245,8 @@
                 </a>
                 <p>Гостиница</p>
                 <p class="hotel-cost">От 1500 ₽</p>
-                <a class="more-details-btn btn-main" href="#">Подробнее</a>
-                <button class="add-to-favourite-btn btn-additional" type="button">В избранное</button>
+                <a class="button details-button button-brown" href="#">Подробнее</a>
+                <button class="button add-favourite-button button-blue" type="button">В избранное</button>
                 <p class="hotel-stars">
                   <span class="visually-hidden">2 звезды</span>
                   <span class="hotel-single-star"></span>
@@ -272,11 +280,11 @@
 
         <section class="subscription" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscription-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscription-email">Укажите Ваш e-mail.</label>
             <input class="subscription-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail" required>
-            <button class="button subscription-buttom" type="submit">Подписаться</button>
+            <button class="button subscription-buttom button-blue" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -316,37 +324,41 @@
           </li>
         </ul>
 
-        <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+        <div class="adress">
+          <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+        </div>
 
-        <a class="copyright-link" href="https://htmlacademy.ru">
-          <svg class="copyright-logo" width="115" height="34" viewBox="0 0 115 34" fill="black"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" />
-            <path
-              d="M11.6 5.32324C10 5.32324 8.8 6.02324 8 7.02324H7.9V0.823242H5.9V16.3232H7.9V11.0232C7.9 8.92324 9.2 7.42324 11.2 7.42324C13 7.42324 14.1 8.82324 14.1 10.6232V16.3232H16.1V10.2232C16.2 7.22324 14.3 5.32324 11.6 5.32324Z" />
-            <path
-              d="M26.6 5.62324H21.8V1.92324H19.8V5.72324H17.9V7.72324H19.8V13.7232C19.8 15.4232 20.8 16.4232 22.5 16.4232H26.6V14.4232H22.9C22.2 14.4232 21.8 14.0232 21.8 13.3232V7.62324H26.6V5.62324Z" />
-            <path
-              d="M41.1 5.42324C39.5 5.42324 38.2 6.22324 37.6 7.52324H37.5C36.9 6.32324 35.7 5.42324 34.1 5.42324C32.7 5.42324 31.6 6.22324 31 7.22324H30.9V5.62324H29V16.2232H31V10.8232C31 8.82324 32 7.32324 33.6 7.32324C35.1 7.32324 36 8.32324 36 9.92324V16.2232H38V10.6232C38 8.22324 39.4 7.32324 40.6 7.32324C42.1 7.32324 43 8.32324 43 9.92324V16.2232H45V9.72324C45.1 7.22324 43.6 5.42324 41.1 5.42324Z" />
-            <path
-              d="M47.8 13.5232C47.8 15.2232 48.8 16.2232 50.6 16.2232H52.6V14.2232H50.9C50.2 14.2232 49.8 13.8232 49.8 13.1232V0.823242H47.8V13.5232Z" />
-            <path
-              d="M28.9 20.5232C28 19.4232 26.7 18.7232 25 18.7232C21.9 18.7232 19.6 21.0232 19.6 24.3232C19.6 27.6232 21.9 29.9232 25 29.9232C26.8 29.9232 28 29.1232 28.8 28.0232H28.9V29.6232H30.9V19.0232H28.9V20.5232ZM25.3 27.9232C23.1 27.9232 21.7 26.3232 21.7 24.3232C21.7 22.3232 23.1 20.7232 25.3 20.7232C27.5 20.7232 28.9 22.3232 28.9 24.3232C28.9 26.2232 27.5 27.9232 25.3 27.9232Z" />
-            <path
-              d="M44.2 22.8232C43.7 20.4232 41.6 18.7232 38.8 18.7232C35.4 18.7232 33.2 21.2232 33.2 24.3232C33.2 27.4232 35.4 29.9232 38.8 29.9232C41.6 29.9232 43.7 28.1232 44.2 25.7232H42.1C41.7 27.0232 40.4 28.0232 38.8 28.0232C36.6 28.0232 35.2 26.4232 35.2 24.4232C35.2 22.4232 36.6 20.8232 38.8 20.8232C40.4 20.8232 41.6 21.8232 42.1 23.0232H44.2V22.8232Z" />
-            <path
-              d="M55.1 20.5232C54.2 19.4232 52.9 18.7232 51.2 18.7232C48.1 18.7232 45.8 21.0232 45.8 24.3232C45.8 27.6232 48.1 29.9232 51.2 29.9232C53 29.9232 54.2 29.1232 55 28.0232H55.1V29.6232H57.1V19.0232H55.1V20.5232ZM51.5 27.9232C49.3 27.9232 47.9 26.3232 47.9 24.3232C47.9 22.3232 49.3 20.7232 51.5 20.7232C53.7 20.7232 55.1 22.3232 55.1 24.3232C55.1 26.2232 53.6 27.9232 51.5 27.9232Z" />
-            <path
-              d="M68.7 20.6232C67.8 19.5232 66.5 18.7232 64.8 18.7232C61.7 18.7232 59.4 21.0232 59.4 24.3232C59.4 27.6232 61.6 29.9232 64.8 29.9232C66.5 29.9232 67.8 29.1232 68.6 28.1232H68.7V29.6232H70.7V14.2232H68.7V20.6232ZM65.1 27.9232C62.9 27.9232 61.5 26.3232 61.5 24.3232C61.5 22.3232 62.9 20.7232 65.1 20.7232C67.3 20.7232 68.7 22.3232 68.7 24.3232C68.6 26.3232 67.2 27.9232 65.1 27.9232Z" />
-            <path
-              d="M78.3 18.7232C75 18.7232 72.8 21.2232 72.8 24.3232C72.8 27.3232 74.9 29.9232 78.3 29.9232C80.8 29.9232 82.8 28.6232 83.5 26.3232H81.4C80.9 27.3232 79.8 27.9232 78.4 27.9232C76.5 27.9232 75.1 26.6232 75 25.0232H83.8C84 21.4232 81.8 18.7232 78.3 18.7232ZM78.3 20.6232C80 20.6232 81.3 21.6232 81.6 23.2232H75.1C75.4 21.7232 76.6 20.6232 78.3 20.6232Z" />
-            <path
-              d="M98.2 18.7232C96.6 18.7232 95.3 19.5232 94.6 20.7232H94.5C93.9 19.5232 92.7 18.7232 91.1 18.7232C89.7 18.7232 88.6 19.4232 88 20.5232V19.0232H86.1V29.6232H88.1V24.2232C88.1 22.2232 89.1 20.8232 90.7 20.7232C92.2 20.7232 93.1 21.7232 93.1 23.3232V29.6232H95.1V24.0232C95.1 21.6232 96.5 20.7232 97.7 20.7232C99.2 20.7232 100.1 21.7232 100.1 23.3232V29.6232H102.1V23.1232C102.2 20.5232 100.7 18.7232 98.2 18.7232Z" />
-            <path
-              d="M109.4 27.8232L105.8 18.9232H103.6L108.4 30.5232C108.1 31.4232 107.7 31.7232 106.7 31.7232H104.2V33.7232H106.7C108.5 33.7232 109.5 32.9232 110.2 31.1232L114.9 18.9232H112.8L109.4 27.8232Z" />
-          </svg>
-          <span class="visually-hidden">Перейти на сайт HTML Academy</span>
-        </a>
+        <div class="copyright-wrapper">
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg class="copyright-logo" width="115" height="34" viewBox="0 0 115 34" fill="black"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" />
+              <path
+                d="M11.6 5.32324C10 5.32324 8.8 6.02324 8 7.02324H7.9V0.823242H5.9V16.3232H7.9V11.0232C7.9 8.92324 9.2 7.42324 11.2 7.42324C13 7.42324 14.1 8.82324 14.1 10.6232V16.3232H16.1V10.2232C16.2 7.22324 14.3 5.32324 11.6 5.32324Z" />
+              <path
+                d="M26.6 5.62324H21.8V1.92324H19.8V5.72324H17.9V7.72324H19.8V13.7232C19.8 15.4232 20.8 16.4232 22.5 16.4232H26.6V14.4232H22.9C22.2 14.4232 21.8 14.0232 21.8 13.3232V7.62324H26.6V5.62324Z" />
+              <path
+                d="M41.1 5.42324C39.5 5.42324 38.2 6.22324 37.6 7.52324H37.5C36.9 6.32324 35.7 5.42324 34.1 5.42324C32.7 5.42324 31.6 6.22324 31 7.22324H30.9V5.62324H29V16.2232H31V10.8232C31 8.82324 32 7.32324 33.6 7.32324C35.1 7.32324 36 8.32324 36 9.92324V16.2232H38V10.6232C38 8.22324 39.4 7.32324 40.6 7.32324C42.1 7.32324 43 8.32324 43 9.92324V16.2232H45V9.72324C45.1 7.22324 43.6 5.42324 41.1 5.42324Z" />
+              <path
+                d="M47.8 13.5232C47.8 15.2232 48.8 16.2232 50.6 16.2232H52.6V14.2232H50.9C50.2 14.2232 49.8 13.8232 49.8 13.1232V0.823242H47.8V13.5232Z" />
+              <path
+                d="M28.9 20.5232C28 19.4232 26.7 18.7232 25 18.7232C21.9 18.7232 19.6 21.0232 19.6 24.3232C19.6 27.6232 21.9 29.9232 25 29.9232C26.8 29.9232 28 29.1232 28.8 28.0232H28.9V29.6232H30.9V19.0232H28.9V20.5232ZM25.3 27.9232C23.1 27.9232 21.7 26.3232 21.7 24.3232C21.7 22.3232 23.1 20.7232 25.3 20.7232C27.5 20.7232 28.9 22.3232 28.9 24.3232C28.9 26.2232 27.5 27.9232 25.3 27.9232Z" />
+              <path
+                d="M44.2 22.8232C43.7 20.4232 41.6 18.7232 38.8 18.7232C35.4 18.7232 33.2 21.2232 33.2 24.3232C33.2 27.4232 35.4 29.9232 38.8 29.9232C41.6 29.9232 43.7 28.1232 44.2 25.7232H42.1C41.7 27.0232 40.4 28.0232 38.8 28.0232C36.6 28.0232 35.2 26.4232 35.2 24.4232C35.2 22.4232 36.6 20.8232 38.8 20.8232C40.4 20.8232 41.6 21.8232 42.1 23.0232H44.2V22.8232Z" />
+              <path
+                d="M55.1 20.5232C54.2 19.4232 52.9 18.7232 51.2 18.7232C48.1 18.7232 45.8 21.0232 45.8 24.3232C45.8 27.6232 48.1 29.9232 51.2 29.9232C53 29.9232 54.2 29.1232 55 28.0232H55.1V29.6232H57.1V19.0232H55.1V20.5232ZM51.5 27.9232C49.3 27.9232 47.9 26.3232 47.9 24.3232C47.9 22.3232 49.3 20.7232 51.5 20.7232C53.7 20.7232 55.1 22.3232 55.1 24.3232C55.1 26.2232 53.6 27.9232 51.5 27.9232Z" />
+              <path
+                d="M68.7 20.6232C67.8 19.5232 66.5 18.7232 64.8 18.7232C61.7 18.7232 59.4 21.0232 59.4 24.3232C59.4 27.6232 61.6 29.9232 64.8 29.9232C66.5 29.9232 67.8 29.1232 68.6 28.1232H68.7V29.6232H70.7V14.2232H68.7V20.6232ZM65.1 27.9232C62.9 27.9232 61.5 26.3232 61.5 24.3232C61.5 22.3232 62.9 20.7232 65.1 20.7232C67.3 20.7232 68.7 22.3232 68.7 24.3232C68.6 26.3232 67.2 27.9232 65.1 27.9232Z" />
+              <path
+                d="M78.3 18.7232C75 18.7232 72.8 21.2232 72.8 24.3232C72.8 27.3232 74.9 29.9232 78.3 29.9232C80.8 29.9232 82.8 28.6232 83.5 26.3232H81.4C80.9 27.3232 79.8 27.9232 78.4 27.9232C76.5 27.9232 75.1 26.6232 75 25.0232H83.8C84 21.4232 81.8 18.7232 78.3 18.7232ZM78.3 20.6232C80 20.6232 81.3 21.6232 81.6 23.2232H75.1C75.4 21.7232 76.6 20.6232 78.3 20.6232Z" />
+              <path
+                d="M98.2 18.7232C96.6 18.7232 95.3 19.5232 94.6 20.7232H94.5C93.9 19.5232 92.7 18.7232 91.1 18.7232C89.7 18.7232 88.6 19.4232 88 20.5232V19.0232H86.1V29.6232H88.1V24.2232C88.1 22.2232 89.1 20.8232 90.7 20.7232C92.2 20.7232 93.1 21.7232 93.1 23.3232V29.6232H95.1V24.0232C95.1 21.6232 96.5 20.7232 97.7 20.7232C99.2 20.7232 100.1 21.7232 100.1 23.3232V29.6232H102.1V23.1232C102.2 20.5232 100.7 18.7232 98.2 18.7232Z" />
+              <path
+                d="M109.4 27.8232L105.8 18.9232H103.6L108.4 30.5232C108.1 31.4232 107.7 31.7232 106.7 31.7232H104.2V33.7232H106.7C108.5 33.7232 109.5 32.9232 110.2 31.1232L114.9 18.9232H112.8L109.4 27.8232Z" />
+            </svg>
+            <span class="visually-hidden">Перейти на сайт HTML Academy</span>
+          </a>
+        </div>
       </footer>
     </div>
   </body>
