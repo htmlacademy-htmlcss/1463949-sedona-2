@@ -1382,10 +1382,6 @@ body {
 }
 
 .hotel-stars {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #333333;
   margin: 0;
   padding: 0;
   max-width: 140px;
@@ -1395,7 +1391,7 @@ body {
 .four-stars::before {
   content: "";
   display: inline-block;
-  width: 87px;
+  width: 89px;
   height: 17px;
   background-image: url(../images/star-icon.svg);
   background-repeat: space no-repeat;
@@ -1407,7 +1403,7 @@ body {
 .three-stars::before {
   content: "";
   display: inline-block;
-  width: 65px;
+  width: 66px;
   height: 17px;
   background-image: url(../images/star-icon.svg);
   background-repeat: space no-repeat;
@@ -1419,7 +1415,7 @@ body {
 .two-stars::before {
   content: "";
   display: inline-block;
-  width: 40px;
+  width: 42px;
   height: 17px;
   background-image: url(../images/star-icon.svg);
   background-repeat: space no-repeat;
