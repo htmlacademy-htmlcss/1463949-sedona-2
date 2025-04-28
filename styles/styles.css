@@ -174,7 +174,6 @@ body {
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   padding: 0 70px;
 }
 
@@ -330,6 +329,12 @@ body {
   transform: translateX(-2px);
 }
 
+.navigation-button-wrapper {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
 .navigation-button {
   margin-top: -6px;
   padding: 8px 34px;
@@ -420,11 +425,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   max-width: 400px;
   min-height: 385px;
-  padding: 20px 80px;
+  padding: 115px 85px 85px 85px;
   box-sizing: border-box;
 }
 
@@ -450,6 +455,7 @@ body {
 
 .advantages-item-title {
   margin: 0;
+  margin-top: -1px;
   max-width: 175px;
   font-size: 24px;
   line-height: 28px;
@@ -457,8 +463,19 @@ body {
   color: #000000;
 }
 
+.advantages-item-title_big {
+  margin: 0;
+  margin-top: -11px;
+  max-width: 175px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 .advantages-item-subtitle {
   margin: 0;
+  margin-top: -2px;
   font-size: 18px;
   line-height: 21px;
   order: 3;
@@ -1367,21 +1384,52 @@ body {
 }
 
 .hotel-stars {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  justify-content: flex-start;
-  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  max-width: 140px;
+  align-self: center;
 }
 
-.hotel-single-star {
-  width: 18px;
+.four-stars::before {
+  content: "";
+  display: inline-block;
+  width: 87px;
   height: 17px;
   background-image: url(../images/star-icon.svg);
-  background-repeat: no-repeat;
+  background-repeat: space no-repeat;
   background-position: center;
   background-size: contain;
+  margin-top: 1px;
 }
+
+.three-stars::before {
+  content: "";
+  display: inline-block;
+  width: 65px;
+  height: 17px;
+  background-image: url(../images/star-icon.svg);
+  background-repeat: space no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 1px;
+}
+
+.two-stars::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 17px;
+  background-image: url(../images/star-icon.svg);
+  background-repeat: space no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 1px;
+}
+
 
 .hotel-rating {
   padding: 9px 22px 8px 23px;
